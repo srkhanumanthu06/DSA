@@ -6,8 +6,12 @@ DON'T REACH FOR: itertools.accumulate(), max() across slices.
 
 3 PROBLEMS (all required)
 ● 1. Running Sum of 1d Array
+
 ● 2. Max Consecutive Ones
+
 ● 3. Best Time to Buy and Sell Stock
+
+-------------------------------------------------------------------------------
 
 Question 1 : running sum of 1d array
 
