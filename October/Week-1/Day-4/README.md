@@ -5,6 +5,7 @@ Topic: Running state in one pass
 DON'T REACH FOR: itertools.accumulate(), max() across slices.
 
 3 PROBLEMS (all required)
+
 ● 1. Running Sum of 1d Array
 
 ● 2. Max Consecutive Ones
