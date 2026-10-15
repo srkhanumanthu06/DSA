@@ -18,6 +18,7 @@ Explanation: 1 + 2 + 3 + 4 = 10.
 Input: arr[] = [1, 3, 3]
 Output: 7
 Explanation: 1 + 3 + 3 = 7.
+
 ---------------------------------------------------------------------------------
 
 Question 2 : Max consecutive ones
@@ -37,6 +38,7 @@ Explanation: The maximum number of consecutive 0’s in the array is 2 from inde
 Input: arr[] = [0, 0, 0, 0]
 Output: 4
 Explanation: The maximum number of consecutive 0’s in the array is 4.
+
 -------------------------------------------------------------------------------------
 
 Question 3 : Best time to buy and sell stocks
@@ -58,4 +60,5 @@ Explanation: Since the array is sorted in decreasing order, 0 profit can be made
 Input: prices[] = [1, 3, 6, 9, 11]
 Output: 10
 Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1]
+
 -----------------------------------------------------------------------------------------
