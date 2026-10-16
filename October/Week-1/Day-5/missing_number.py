@@ -1,3 +1,4 @@
+#Missing number in a array
 class Solution(object):
     def missingNumber(self, nums):
         n = len(nums)
