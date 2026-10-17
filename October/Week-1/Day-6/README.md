@@ -1,9 +1,8 @@
-Day 6 · Oct 6 Tue 
+Day-6 
 
 Topic: Prefix sum basics 
 
 DON'T REACH FOR: itertools.accumulate(). Build the prefix array with a loop.
-
 
 3 PROBLEMS 
 
