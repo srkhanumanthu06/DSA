@@ -1,45 +1,40 @@
-#Leetcode 189 - Rotate array
 class Solution:
-    def rotate(self, nums, k):
-        n = len(nums)
+    def rotateArr(self, arr, d):
+        n = len(arr)
+        d = d % n
 
-        if n == 0:
-            return
+        # Reverse the first d elements
+        left = 0
+        right = d - 1
 
-        k = k % n
+        while left < right:
+            temp = arr[left]
+            arr[left] = arr[right]
+            arr[right] = temp
+
+            left = left + 1
+            right = right - 1
+
+        # Reverse the remaining elements
+        left = d
+        right = n - 1
+
+        while left < right:
+            temp = arr[left]
+            arr[left] = arr[right]
+            arr[right] = temp
+
+            left = left + 1
+            right = right - 1
 
         # Reverse the entire array
         left = 0
         right = n - 1
 
         while left < right:
-            temp = nums[left]
-            nums[left] = nums[right]
-            nums[right] = temp
-
-            left = left + 1
-            right = right - 1
-
-        # Reverse the first k elements
-        left = 0
-        right = k - 1
-
-        while left < right:
-            temp = nums[left]
-            nums[left] = nums[right]
-            nums[right] = temp
-
-            left = left + 1
-            right = right - 1
-
-        # Reverse the remaining elements
-        left = k
-        right = n - 1
-
-        while left < right:
-            temp = nums[left]
-            nums[left] = nums[right]
-            nums[right] = temp
+            temp = arr[left]
+            arr[left] = arr[right]
+            arr[right] = temp
 
             left = left + 1
             right = right - 1
