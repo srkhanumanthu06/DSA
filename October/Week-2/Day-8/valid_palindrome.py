@@ -1,12 +1,8 @@
 class Solution(object):
     def isPalindrome(self, s):
-        # Start left pointer at the beginning
         left = 0
-
-        # Start right pointer at the end
         right = len(s) - 1
 
-        # Continue until both pointers meet
         while left < right:
 
             # Skip special characters from the left
@@ -17,16 +13,16 @@ class Solution(object):
             elif not s[right].isalnum():
                 right = right - 1
 
-            # Compare both characters in lowercase
+            # compare both characters in lowercase
             elif s[left].lower() != s[right].lower():
                 return False
 
             else:
-                # Move left pointer forward
+                # to move left pointer forward
                 left = left + 1
 
-                # Move right pointer backward
+                # to move right pointer backward
                 right = right - 1
 
-        # If all characters match, it is a palindrome
+        # if all characters match, it is a palindrome
         return True
